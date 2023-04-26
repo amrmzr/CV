@@ -11,7 +11,7 @@ body {
   padding-top: 100px;
 }
 
-p {
+.skill-row p {
   display: block;
   margin: 0;
 }
@@ -27,16 +27,22 @@ h1 {
   text-align: left;
   margin-left: 3rem;
 }
+.profile {
+  background-color: #212a3e;
+  padding: 50px;
+}
 h2 {
-  color: #66bfbf;
-  margin-top: 0;
+  color: #394867;
+  margin-top: 10px;
   font-size: 2.5rem;
   font-family: "Montserrat", sans-serif;
   font-weight: bolder;
 }
+.profile > h2 {
+  color: #f1f6f9;
+}
 
-h3 {
-  color: #11999e;
+.skill-row h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: bolder;
 }
@@ -44,9 +50,10 @@ h3 {
 .skills__subheading {
   display: block;
   margin: 0;
+  color: #394867;
 }
 a {
-  color: #11999e;
+  color: #394867;
   text-decoration: none;
 }
 
@@ -80,37 +87,77 @@ a:hover {
 
 .profile-pic {
   border-radius: 100%;
+  width: 200px;
+  height: 200px;
 }
 
 .middle-container {
   margin: 80px 0;
 }
+.third-container {
+  background-color: #9ba4b5;
+  margin: 80px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.third-container h2 {
+  color: #f1f6f9;
+  width: 100%;
+}
 
+.date_period {
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+.education {
+  text-align: left;
+}
+.edu_img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  margin: 0 3rem;
+}
+@media (max-width: 460px) {
+  .edu_img {
+    margin: 0 0.5rem;
+  }
+}
+.sc {
+  margin: 0.1rem 0;
+}
 .intro {
   width: 80%;
   margin: auto;
+  color: #fff;
+  text-align: left;
 }
 
 .bottom-container {
-  background-color: #66bfbf;
+  background-color: #212a3e;
   padding: 40px 0 0;
 }
 
+.colored-text {
+  color: #f1f6f9;
+}
 .footer-link {
   margin: 40px 20px;
-  color: #11999e;
+  color: #9ba4b5;
 }
 
 .footer-note {
-  color: #eaf6f6;
+  color: #f1f6f9;
   margin: 50px auto 5px;
   font-size: 0.75rem;
 }
 
 .bottom-cloud {
   position: absolute;
-  left: 300px;
-  bottom: 300px;
+  left: 600px;
+  bottom: 30px;
 }
 
 .top-cloud {
@@ -118,11 +165,16 @@ a:hover {
   right: 300px;
   top: 50px;
 }
-
+@media (max-width: 720px) {
+  .bottom-cloud,
+  .top-cloud {
+    display: none;
+  }
+}
 hr {
   border-style: none;
   border-top-style: dotted;
-  color: #eaf6f6;
+  color: #f1f6f9;
   height: 0;
   width: 10%;
   border-width: 10px;
@@ -131,16 +183,16 @@ hr {
 
 .BUTTON {
   margin: 30px auto;
-  background: #11999e;
-  background-image: -webkit-linear-gradient(top, #11999e);
-  background-image: -moz-linear-gradient(top, #11999e);
-  background-image: -ms-linear-gradient(top, #11999e);
-  background-image: -o-linear-gradient(top, #11999e);
-  background-image: -webkit-gradient(to bottom, #11999e);
+  background: #212a3e;
+  background-image: -webkit-linear-gradient(top, #212a3e);
+  background-image: -moz-linear-gradient(top, #212a3e);
+  background-image: -ms-linear-gradient(top, #212a3e);
+  background-image: -o-linear-gradient(top, #212a3e);
+  background-image: -webkit-gradient(to bottom, #212a3e);
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 10px;
-  color: #ffffff;
+  color: #fff;
   font-family: Arial;
   font-size: 20px;
   font-weight: 100;
@@ -149,7 +201,7 @@ hr {
   -moz-box-shadow: 1px 1px 20px 0 #000000;
   box-shadow: 1px 1px 20px 0 #000000;
   text-shadow: 1px 1px 20px #000000;
-  border: solid #337fed 0;
+  border: solid #212a3e 0;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -157,12 +209,12 @@ hr {
 }
 
 .BUTTON:hover {
-  background: #57c6ca;
-  background-image: -webkit-linear-gradient(top, #57c6ca, #57c6ca);
-  background-image: -moz-linear-gradient(top, #57c6ca, #57c6ca);
-  background-image: -ms-linear-gradient(top, #57c6ca, #57c6ca);
-  background-image: -o-linear-gradient(top, #57c6ca, #57c6ca);
-  background-image: -webkit-gradient(to bottom, #57c6ca, #57c6ca);
+  background: #9ba4b5;
+  background-image: -webkit-linear-gradient(top, #9ba4b5, #9ba4b5);
+  background-image: -moz-linear-gradient(top, #9ba4b5, #9ba4b5);
+  background-image: -ms-linear-gradient(top, #9ba4b5, #9ba4b5);
+  background-image: -o-linear-gradient(top, #9ba4b5, #9ba4b5);
+  background-image: -webkit-gradient(to bottom, #9ba4b5, #9ba4b5);
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
